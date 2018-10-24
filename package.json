@@ -1,0 +1,26 @@
+{
+    "name": "dsdl",
+    "displayName": "DSDL",
+    "description": "Data Structure Description Language",
+    "version": "0.0.1",
+    "publisher": "aasmune",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dsdl",
+            "aliases": ["DSDL", "dsdl"],
+            "extensions": [".uavcan"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dsdl",
+            "scopeName": "source.dsdl",
+            "path": "./syntaxes/dsdl.tmLanguage.json"
+        }]
+    }
+}
