@@ -7,23 +7,72 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#storage"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.dsdl",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.dsdl",
+					"match": "\\b(union)\\b"
+				},
+				{
+					"name": "keyword.other.dsdl",
+					"match": "---"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.dsdl",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "(\"|\\')",
+			"end": "(\"|\\')",
 			"patterns": [
 				{
 					"name": "constant.character.escape.dsdl",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"match": "#.*",
+				"name": "comment.line.number-sign"
+			}]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"match": "0[xX][0-9a-fA-F]+",
+					"name": "constant.numeric"
+				},
+				{
+					"match": "\\b[0-9]+\\b",
+					"name": "constant.numeric"
+				}
+			]
+		},
+		"storage": {
+			"patterns": [
+				{
+					"match": "\\b[u]?int([2-9]|[1-5][0-9]|6[0-4])\\b|\\bfloat(16|32|64)\\b|\\bvoid([1-9]|[1-5][0-9]|6[0-4])\\b|\\bbool\\b",
+					"name": "storage.type"
+				},
+				{
+					"match": "^\\b(\\w\\.?)+(\\[[0-9]+\\])? \\b",
+					"name": "storage.type"
+				},
+				{
+					"match": "\\b(saturated|truncated)\\b",
+					"name": "storage.modifier"
 				}
 			]
 		}
