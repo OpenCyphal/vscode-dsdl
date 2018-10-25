@@ -26,8 +26,8 @@
 					"match": "\\b(union)\\b"
 				},
 				{
-					"name": "keyword.other.dsdl",
-					"match": "---"
+					"name": "keyword.control.dsdl",
+					"match": "^--- *$"
 				}
 			]
 		},
@@ -45,18 +45,34 @@
 		"comments": {
 			"patterns": [{
 				"match": "#.*",
-				"name": "comment.line.number-sign"
+				"name": "comment.line.number-sign.dsdl"
 			}]
 		},
 		"constants": {
 			"patterns": [
 				{
-					"match": "0[xX][0-9a-fA-F]+",
-					"name": "constant.numeric"
+					"match": "\\b0[xX][0-9a-fA-F]+\\b",
+					"name": "constant.numeric.dsdl"
 				},
 				{
-					"match": "\\b[0-9]+\\b",
-					"name": "constant.numeric"
+					"match": "\\b0o[0-7]+\\b",
+					"name": "constant.numeric.dsdl"
+				},
+				{
+					"match": "\\b0[b][0-1]+\\b",
+					"name": "constant.numeric.dsdl"
+				},
+				{
+					"match": "\\b[-+]?[1-9]+(?:\\.\\d+)?[Ee][-+]?\\d+\\b",
+					"name": "constant.numeric.dsdl"
+				},
+				{
+					"match": "[-+]?[0-9]*\\.?[0-9]+",
+					"name": "constant.numeric.dsdl"
+				},
+				{
+					"match": "\\b(true|false)\\b",
+					"name": "constant.language.dsdl"
 				}
 			]
 		},
@@ -64,15 +80,15 @@
 			"patterns": [
 				{
 					"match": "\\b[u]?int([2-9]|[1-5][0-9]|6[0-4])\\b|\\bfloat(16|32|64)\\b|\\bvoid([1-9]|[1-5][0-9]|6[0-4])\\b|\\bbool\\b",
-					"name": "storage.type"
+					"name": "storage.type.dsdl"
 				},
 				{
 					"match": "^\\b(\\w\\.?)+(\\[[0-9]+\\])? \\b",
-					"name": "storage.type"
+					"name": "storage.type.dsdl"
 				},
 				{
 					"match": "\\b(saturated|truncated)\\b",
-					"name": "storage.modifier"
+					"name": "storage.modifier.dsdl"
 				}
 			]
 		}
