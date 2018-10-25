@@ -2,7 +2,7 @@
     "name": "dsdl",
     "displayName": "DSDL",
     "description": "Data Structure Description Language",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "aasmune",
     "engines": {
         "vscode": "^1.28.0"
