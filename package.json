@@ -3,7 +3,16 @@
     "displayName": "DSDL",
     "description": "Data Structure Description Language",
     "version": "0.1.0",
-    "publisher": "aasmune",
+    "publisher": "uavcan-devs",
+    "author": {
+        "name": "UAVCAN organization - UAVCAN development team"
+    },
+    "icon": "images/uavcan.png",
+    "readme": "README.md",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/UAVCAN/vscode-dsdl.git"
+    },
     "engines": {
         "vscode": "^1.28.0"
     },
