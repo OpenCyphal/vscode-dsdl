@@ -4,7 +4,7 @@ This extension adds support for Data Structure Description Language (DSDL) v0.1 
 
 ## Features
 
-* Synatx highlighting for dsdl v0.1
+* Syntax highlighting for dsdl v0.1
     * All built-in primitive types
     * Constant values:
         * Interger literals in base 2, 8, 10, 16
@@ -23,5 +23,5 @@ This extension adds support for Data Structure Description Language (DSDL) v0.1 
 
 ### 0.1.0
 
-Initial release of Extension. Added support for syntax highlighting and shortcuts for easy commenting/uncommenting of code.
+The initial release of Extension. Added support for syntax highlighting and shortcuts for easy commenting/uncommenting of code.
 
