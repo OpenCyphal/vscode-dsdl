@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.dsdl",
-					"match": "\\b(union)\\b"
+					"match": "^@\\w+ *"
 				},
 				{
 					"name": "keyword.control.dsdl",
