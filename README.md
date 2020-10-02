@@ -1,10 +1,10 @@
 # DSDL for Visual Studio Code
 
-This extension adds support for Data Structure Description Language (DSDL) v0.1 in Visual Studio Code.
+This extension adds support for Data Structure Description Language (DSDL) in Visual Studio Code.
 
 ## Features
 
-* Syntax highlighting for dsdl v0.1
+* Syntax highlighting for DSDL
     * All built-in primitive types
     * Constant values:
         * Interger literals in base 2, 8, 10, 16
