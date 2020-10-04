@@ -2,7 +2,7 @@
     "name": "dsdl",
     "displayName": "DSDL",
     "description": "Data Structure Description Language",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "publisher": "uavcan",
     "author": {
         "name": "UAVCAN organization - UAVCAN development team"
