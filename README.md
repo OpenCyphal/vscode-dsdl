@@ -21,6 +21,13 @@ This extension adds support for Data Structure Description Language (DSDL) in Vi
 
 ## Release Notes
 
+### 1.0.0
+
+First stable release. Changes:
+
+- State support for UAVCAN v1.0. The syntax definitions did not need updating.
+- Update the logo.
+
 ### 0.1.0
 
 The initial release of Extension. Added support for syntax highlighting and shortcuts for easy commenting/uncommenting of code.
