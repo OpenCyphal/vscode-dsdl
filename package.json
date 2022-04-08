@@ -7,7 +7,7 @@
     "author": {
         "name": "UAVCAN organization - UAVCAN development team"
     },
-    "icon": "images/uavcan.png",
+    "icon": "images/opencyphal.png",
     "readme": "README.md",
     "repository": {
         "type" : "git",
@@ -23,7 +23,7 @@
         "languages": [{
             "id": "dsdl",
             "aliases": ["DSDL", "dsdl"],
-            "extensions": [".uavcan"],
+            "extensions": [".dsdl", ".uavcan"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
