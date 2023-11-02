@@ -2,7 +2,7 @@
     "name": "dsdl",
     "displayName": "DSDL",
     "description": "Data Structure Description Language",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "uavcan",
     "author": {
         "name": "UAVCAN organization - UAVCAN development team"
@@ -23,7 +23,7 @@
         "languages": [{
             "id": "dsdl",
             "aliases": ["DSDL", "dsdl"],
-            "extensions": [".uavcan"],
+            "extensions": [".uavcan", ".dsdl"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
